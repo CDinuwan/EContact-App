@@ -1,0 +1,10 @@
+C:\Users\hecdi\source\repos\EContact App\EContact App\bin\Debug\EContact App.exe.config
+C:\Users\hecdi\source\repos\EContact App\EContact App\bin\Debug\EContact App.exe
+C:\Users\hecdi\source\repos\EContact App\EContact App\bin\Debug\EContact App.pdb
+C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact App.csprojAssemblyReference.cache
+C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact_App.Form1.resources
+C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact_App.Properties.Resources.resources
+C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact App.csproj.GenerateResource.cache
+C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact App.csproj.CoreCompileInputs.cache
+C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact App.exe
+C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact App.pdb
