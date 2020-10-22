@@ -8,3 +8,4 @@ C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact App.csp
 C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact App.csproj.CoreCompileInputs.cache
 C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact App.exe
 C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact App.pdb
+C:\Users\hecdi\source\repos\EContact App\EContact App\obj\Debug\EContact_App.frmSelectContactID.resources

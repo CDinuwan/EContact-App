@@ -15,7 +15,8 @@ namespace EContact_App
     {
         SqlConnection con = new SqlConnection();
         SqlCommand cm = new SqlCommand();
-        DBConnection dbcon = new DBConnection(); 
+        DBConnection dbcon = new DBConnection();
+        SqlDataReader dr;
         public Form1()
         {
             InitializeComponent();
@@ -43,12 +44,14 @@ namespace EContact_App
             txtCon_no.Clear();
             txtConID.Clear();
             txtAddress.Clear();
+            comGender.ResetText();
+            dataGridView1.Rows.Clear();
         }
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                if(MessageBox.Show("Are you sure you want to add this record?","Save",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to add this record?", "Save", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     con.Open();
                     cm = new SqlCommand("INSERT INTO tblCon(con_id, first_name, last_name, contact_no, address, gender)values(@con_id, @first_name, @last_name, @contact_no, @address, @gender)", con);
@@ -63,11 +66,48 @@ namespace EContact_App
                     MessageBox.Show("Your information are successfully saved");
                     Clear();
                 }
-            }catch(Exception er)
+            }
+            catch (Exception er)
             {
                 MessageBox.Show(er.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
+
         }
+        public void LoadRecord()
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            dataGridView1.Rows.Clear();
+            cm = new SqlCommand("select first_name,contact_no,address,gender from tblCon where con_id like '" + txtSearch.Text + "'", con);
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                dataGridView1.Rows.Add(dr["first_name"].ToString(), dr["contact_no"].ToString(), dr["address"].ToString(), dr["gender"].ToString());
+            }
+            dr.Close();
+            con.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmSelectContactID frm = new frmSelectContactID();
+            frm.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmSelectContactID frm = new frmSelectContactID();
+            frm.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
     }
 }
