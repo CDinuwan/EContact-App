@@ -50,13 +50,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -66,7 +66,7 @@
             // txtConID
             // 
             this.txtConID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConID.Location = new System.Drawing.Point(147, 97);
+            this.txtConID.Location = new System.Drawing.Point(118, 97);
             this.txtConID.Name = "txtConID";
             this.txtConID.Size = new System.Drawing.Size(212, 24);
             this.txtConID.TabIndex = 0;
@@ -75,7 +75,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 96);
+            this.label1.Location = new System.Drawing.Point(18, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 1;
@@ -85,7 +85,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(47, 138);
+            this.label2.Location = new System.Drawing.Point(18, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 3;
@@ -94,7 +94,7 @@
             // txtFN
             // 
             this.txtFN.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFN.Location = new System.Drawing.Point(147, 139);
+            this.txtFN.Location = new System.Drawing.Point(118, 139);
             this.txtFN.Name = "txtFN";
             this.txtFN.Size = new System.Drawing.Size(212, 24);
             this.txtFN.TabIndex = 2;
@@ -103,7 +103,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(47, 179);
+            this.label3.Location = new System.Drawing.Point(18, 179);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 20);
             this.label3.TabIndex = 5;
@@ -113,7 +113,7 @@
             // txtLN
             // 
             this.txtLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLN.Location = new System.Drawing.Point(147, 180);
+            this.txtLN.Location = new System.Drawing.Point(118, 180);
             this.txtLN.Name = "txtLN";
             this.txtLN.Size = new System.Drawing.Size(212, 24);
             this.txtLN.TabIndex = 4;
@@ -122,7 +122,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(47, 220);
+            this.label4.Location = new System.Drawing.Point(18, 220);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 20);
             this.label4.TabIndex = 7;
@@ -131,7 +131,7 @@
             // txtCon_no
             // 
             this.txtCon_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCon_no.Location = new System.Drawing.Point(147, 221);
+            this.txtCon_no.Location = new System.Drawing.Point(118, 221);
             this.txtCon_no.Name = "txtCon_no";
             this.txtCon_no.Size = new System.Drawing.Size(212, 24);
             this.txtCon_no.TabIndex = 6;
@@ -140,7 +140,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(47, 263);
+            this.label5.Location = new System.Drawing.Point(18, 263);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 20);
             this.label5.TabIndex = 9;
@@ -150,7 +150,7 @@
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(147, 264);
+            this.txtAddress.Location = new System.Drawing.Point(118, 264);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(212, 88);
@@ -160,7 +160,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(47, 371);
+            this.label6.Location = new System.Drawing.Point(18, 371);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 20);
             this.label6.TabIndex = 10;
@@ -174,7 +174,7 @@
             "MALE",
             "FEMALE",
             "OTHER"});
-            this.comGender.Location = new System.Drawing.Point(147, 370);
+            this.comGender.Location = new System.Drawing.Point(118, 370);
             this.comGender.Name = "comGender";
             this.comGender.Size = new System.Drawing.Size(212, 26);
             this.comGender.TabIndex = 11;
@@ -275,31 +275,11 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(398, 138);
+            this.dataGridView1.Location = new System.Drawing.Point(336, 138);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.Size = new System.Drawing.Size(392, 253);
+            this.dataGridView1.Size = new System.Drawing.Size(454, 253);
             this.dataGridView1.TabIndex = 18;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "NAME";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "CONTACT NO:";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "ADDRESS";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "GENDER";
-            this.Column4.Name = "Column4";
             // 
             // pictureBox1
             // 
@@ -332,6 +312,33 @@
             this.pictureBox3.TabIndex = 21;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column1.HeaderText = "NAME";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 80;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column2.HeaderText = "CONTACT NO:";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 139;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "ADDRESS";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column4.HeaderText = "GENDER";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 104;
             // 
             // Form1
             // 
@@ -398,11 +405,11 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

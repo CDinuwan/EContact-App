@@ -46,32 +46,40 @@ namespace EContact_App
             txtAddress.Clear();
             comGender.ResetText();
             dataGridView1.Rows.Clear();
+            txtSearch.Clear();
         }
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                if (MessageBox.Show("Are you sure you want to add this record?", "Save", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (txtConID.Text != String.Empty && txtAddress.Text != String.Empty && txtCon_no.Text != String.Empty && txtFN.Text != String.Empty)
                 {
-                    con.Open();
-                    cm = new SqlCommand("INSERT INTO tblCon(con_id, first_name, last_name, contact_no, address, gender)values(@con_id, @first_name, @last_name, @contact_no, @address, @gender)", con);
-                    cm.Parameters.AddWithValue("@con_id", txtConID.Text);
-                    cm.Parameters.AddWithValue("@first_name", txtFN.Text);
-                    cm.Parameters.AddWithValue("@last_name", txtLN.Text);
-                    cm.Parameters.AddWithValue("@contact_no", txtCon_no.Text);
-                    cm.Parameters.AddWithValue("@address", txtAddress.Text);
-                    cm.Parameters.AddWithValue("@gender", comGender.Text);
-                    cm.ExecuteNonQuery();
-                    con.Close();
-                    MessageBox.Show("Your information are successfully saved");
-                    Clear();
+                    if (MessageBox.Show("Are you sure you want to add this record?", "Save", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        con.Open();
+                        cm = new SqlCommand("INSERT INTO tblCon(con_id, first_name, last_name, contact_no, address, gender)values(@con_id, @first_name, @last_name, @contact_no, @address, @gender)", con);
+                        cm.Parameters.AddWithValue("@con_id", txtConID.Text);
+                        cm.Parameters.AddWithValue("@first_name", txtFN.Text);
+                        cm.Parameters.AddWithValue("@last_name", txtLN.Text);
+                        cm.Parameters.AddWithValue("@contact_no", txtCon_no.Text);
+                        cm.Parameters.AddWithValue("@address", txtAddress.Text);
+                        cm.Parameters.AddWithValue("@gender", comGender.Text);
+                        cm.ExecuteNonQuery();
+                        con.Close();
+                        MessageBox.Show("Your information are successfully saved");
+                        Clear();
+                    }
+                }
+                else 
+                {
+                    MessageBox.Show("Incorrect !","Error",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
             }
             catch (Exception er)
             {
                 MessageBox.Show(er.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
+                
         }
         public void LoadRecord()
         {
@@ -94,7 +102,7 @@ namespace EContact_App
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmSelectContactID frm = new frmSelectContactID();
+            frmUpdateRecord frm = new frmUpdateRecord();
             frm.ShowDialog();
         }
 
